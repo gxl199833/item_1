@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网格布局</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <style>
+        body,*{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrap{
+            width: 1085px;
+            margin:50px auto;
+            padding:25px;
+            box-sizing: border-box;
+            background-color: rgb(197, 197, 197);
+            border-radius: 10px;
+            display: grid;
+            grid-template-rows: repeat(5,60px);
+            grid-template-columns: repeat(30,30px);
+            grid-gap: 5px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .key{
+            border: 2px solid #000;
+            background-color: rgb(243, 243, 243);
+            border-radius: 5px;
+            grid-column: span 2;
+            padding-top:14px; 
+        }
+        .key:hover{
+            border: 2px solid rgb(243, 243, 243);
+        }
+        .Delete,.CapsLock,.Return{
+            grid-column: span 4;
+        }
+        .Tab,.Ctrl,.command{
+            grid-column: span 3;
+        }
+        .command{
+            font-size: 14px;
+        }
+        .Shift{
+            grid-column: span 5;
+        }
+        .Space{
+            grid-column: span 13;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="key">~</div>
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key">0</div>
+        <div class="key">-</div>
+        <div class="key">+</div>
+        <div class="key Delete">Delete</div>
+        <div class="key Tab">Tab</div>
+        <div class="key">Q</div>
+        <div class="key">W</div>
+        <div class="key">E</div>
+        <div class="key">R</div>
+        <div class="key">T</div>
+        <div class="key">Y</div>
+        <div class="key">U</div>
+        <div class="key">I</div>
+        <div class="key">O</div>
+        <div class="key">P</div>
+        <div class="key">[</div>
+        <div class="key">]</div>
+        <div class="key Tab">\</div>
+        <div class="key CapsLock">CapsLock</div>
+        <div class="key">A</div>
+        <div class="key">S</div>
+        <div class="key">D</div>
+        <div class="key">F</div>
+        <div class="key">G</div>
+        <div class="key">H</div>
+        <div class="key">J</div>
+        <div class="key">K</div>
+        <div class="key">L</div>
+        <div class="key">;</div>
+        <div class="key">'</div>
+        <div class="key Return">Return</div>
+        <div class="key Shift">Shift</div>
+        <div class="key">Z</div>
+        <div class="key">X</div>
+        <div class="key">C</div>
+        <div class="key">V</div>
+        <div class="key">B</div>
+        <div class="key">N</div>
+        <div class="key">M</div>
+        <div class="key">,</div>
+        <div class="key">.</div>
+        <div class="key">/</div>
+        <div class="key Shift">Shift</div>
+        <div class="key Ctrl">Ctrl</div>
+        <div class="key">Alt</div>
+        <div class="key command">Command</div>
+        <div class="key Space">Space</div>
+        <div class="key command">command</div>
+        <div class="key">Alt</div>
+        <div class="key">Ctrl</div>
+        <div class="key">Fn</div>
+    </div>
+</body>
+</html>
